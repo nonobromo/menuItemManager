@@ -1,10 +1,10 @@
 import { Box, Button } from "@mui/material";
 import FormInput from "./common/formInput";
 import type { FormEvent } from "react";
-import type { MenuItem } from "../pages/menuPage";
+import type { MenuItemDetails } from "../pages/menuPage";
 
 type MenuItemFormProps = {
-  addMenuItem: (item: MenuItem) => void;
+  addMenuItem: (item: MenuItemDetails) => void;
   openMenuForm: () => void;
 };
 
