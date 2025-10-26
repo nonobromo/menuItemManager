@@ -76,7 +76,9 @@ function MenuPage() {
         sx={{
           display: "flex",
           flexDirection: "row-reverse",
+          alignItems: "center",
           marginTop: "40px",
+          gap: "20px",
           justifyContent: "space-between",
         }}
       >
@@ -84,9 +86,12 @@ function MenuPage() {
           color="primary"
           variant="contained"
           onClick={openMenuForm}
-          sx={{ justifyContent: "flex-end" }}
+          sx={{
+            justifyContent: "flex-end",
+            width: { xs: "120px", md: "auto" },
+          }}
         >
-          הוסף פריט לתפריט
+          הוספת פריט
         </Button>
 
         <Input
